@@ -1,4 +1,4 @@
-node()
+node
 {
     stage('Continuous Download') 
 	{
@@ -7,6 +7,5 @@ node()
     stage('Continuous Build') 
 	{
     sh label: '', script: 'mvn package'
-	}
 	}
 }
